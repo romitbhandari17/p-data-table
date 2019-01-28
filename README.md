@@ -8,14 +8,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Important points
 
-The custom selector for data-table requires following as Input parameters:
+The custom selector for data-table requires following as Input parameters:<br>
   `@Input() public rowsPerPage:number;` ** To specify records per page<br>
   `@Input() public recordsCount:number;` ** Total records required for pagination<br>
   `@Input() public loading:boolean;` ** Is true when loading image to be shown, and false for loading image to hide.<br>
   `@Input() public headerArray:[];` ** the Heading Array for the data table<br>
   `@Input() public data:[];` ** The actual data coming in the data table.<br>
 
-The @Output parameters are as follows:
+The @Output parameters are as follows:<br>
   `@Output() public pageChangeClick` ** The page change event coming on page change in drop down and click on prev, nect, first and last<br>
   `@Output() public goToDetailsClick` ** The event coming on click of each row to go to its details<br>
   `@Output() public clickActionEvent` ** Any custom event specified in header Array like 'edit' coming on each row in the example in the code.<br>
